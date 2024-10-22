@@ -46,7 +46,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
   const winner = calculateWinner(squares);
   let status;
   if (winner.player) {
-    status = "Winner: " + winner.player;
+    status = "The winner is: " + winner.player;
   } else if (winner.isDraw) {
     status = "It's a draw!";
   } else {
@@ -54,9 +54,9 @@ export default function Board({ xIsNext, squares, onPlay }) {
   }
 
   return (
-    <>
+    <div>
       <div className="status">{status}</div>
       {generateBoard(3)}
-    </>
+    </div>
   );
 }

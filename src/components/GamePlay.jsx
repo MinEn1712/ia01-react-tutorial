@@ -63,7 +63,7 @@ export default function GamePlay() {
       </div>
       <div className="game-info">
         <button onClick={toggleSort}>
-          {isAscending ? "Descending" : "Ascending"}
+          {isAscending ? "Descending Order" : "Ascending Order"}
         </button>
         <ol>{moves}</ol>
       </div>
